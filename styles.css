@@ -1,0 +1,1049 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 100%;
+}
+/* Products start   */
+.productsTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 40px;
+  font-weight: 400;
+}
+
+.productsTitleMetin {
+  color: gray;
+}
+
+.productMainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin-left: 30px;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.productContainer:hover .productSetIcons {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 2s ease-in-out, visibility 0s 0s;
+}
+
+.productImage {
+  width: 100%;
+}
+
+.productPrices {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.productName {
+  font-weight: 400;
+}
+
+.productName:hover {
+  text-decoration: underline;
+}
+
+.productInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+.productIcons i {
+  color: green;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.productSetIcons {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease-in-out, visibility 0s 2s;
+}
+
+.productSetIcon {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 200;
+  /* transition: background-color 2s ease-in-out, color 2s ease-in-out; */
+}
+
+.productSetIcon:hover{
+  background-color: black;
+  color: white;
+}
+
+/* Animasyon ile sırayla gelen ikonlar */
+.productSetIcons .productSetIcon:nth-child(1) {
+  animation: slideInFromRight 0.5s ease-out 0.1s forwards;
+}
+
+.productSetIcons .productSetIcon:nth-child(2) {
+  animation: slideInFromRight 0.5s ease-out 0.2s forwards;
+}
+
+.productSetIcons .productSetIcon:nth-child(3) {
+  animation: slideInFromRight 0.5s ease-out 0.3s forwards;
+}
+
+.productSetIcons .productSetIcon:nth-child(4) {
+  animation: slideInFromRight 0.5s ease-out 0.4s forwards;
+}
+
+/* Kayma animasyonu sağdan sola doğru */
+@keyframes slideInFromRight {
+  from {
+      transform: translateX(50px); /* Başlangıçta 30px sağda */
+  }
+  to {
+      transform: translateX(0px); /* Sola kayarak orijinal konumuna gelir */
+  }
+}
+
+/*Products end   */
+/* Header start   */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: black;
+    z-index: 100;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-item {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.menu-link {
+    position: relative;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.menu-link a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.menu-link i {
+    margin-left: 8px;
+}
+
+.menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f4f4f4;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+    z-index: 10;
+}
+
+.dropdown li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.glowing-text-wrapper {
+    text-align: left;
+    flex: 1;
+    margin-left: 80px;
+}
+
+.glowing-text {
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    flex: 0.5;
+}
+
+.icons .icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Star ve Cart İkonlarının Sağ Üstünde Sayı */
+.icon-wrapper .icon-badge {
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Serums Divs başladı  */
+
+.serumsDivWrapper {
+    width: 98%;
+    display: flex;
+    column-gap: 30px;
+    margin: 10px;
+    margin-top: 80px;
+}
+
+.serumsDiv {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+
+
+.serumsDiv img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+/* Hover olduğunda resim büyümesi */
+.serumsDiv:hover img {
+    transform: scale(1.2); /* Resmi büyüt */
+}
+
+
+
+.serumsInfo {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.serumCollectionName {
+    padding-bottom: 20px;
+}
+
+.serumName {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.serumsInfoButtonWrapper {
+    margin-top: 40px;
+
+}
+
+.serumsInfoButton {
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+
+}
+
+.serumsInfoButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+} 
+
+
+
+  
+
+
+/*Slider start   */
+
+
+
+/* Home screen Icons start  */
+.HomeScreenIconsWrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.HomeScreenIcon {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.HomeScreenIconTitle {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.HomeScreenIconText {
+    color: grey;
+    margin-top: 15px;
+}
+
+/* Animasyon start */
+.HomeScreenIcon svg path {
+    stroke-dasharray: 200;
+    /* Çizginin toplam uzunluğu */
+    stroke-dashoffset: 200;
+    /* Başlangıçta gizlenmiş olacak */
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* Customer fav start  */
+
+.customerFavWrapper {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-top: 0.5px solid black;
+}
+
+.customerFavTitle {
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.customerFavText {
+    color: gray;
+    font-size: 20;
+}
+
+/*Fav products start  */
+
+.favProductPerson {
+    /* background-image: url("https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-21.jpg"); */
+    width: 40%;
+    height: 140vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   margin-left: 15px;
+   margin-right: 15px;
+   overflow: hidden;
+}
+
+.fav-person-image{
+  width: 100%;
+  height: auto;
+}
+
+.fav-person-image:hover{
+ transform: scale(1.2);
+}
+
+
+.favProductPersonInfo{
+    position: absolute;
+    bottom:10%;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.favProductPersonTitle a{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.favProductPersonText{
+    color: white;
+    font-size: 16px;
+}
+
+.favProductPersonButtonWrapper{
+    margin-top: 20px;
+}
+.favProductPersonButton {
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+
+}
+
+.favProductPersonButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Fav product start  */
+
+.favProductsWrapper{
+    display: flex;
+    column-gap: 20px;
+    overflow: hidden;
+
+}
+.favProducts {
+    width: 60%;
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap; /* Ürünleri iki satıra böl */
+    row-gap: 30px; /* Üst ve alt ürünler arasında boşluk bırak */
+    justify-content: space-between; /* Ürünleri düzgün hizala */
+}
+
+.favProductContainer {
+    width: 30%; /* 3 ürün sığması için genişliği ayarla */
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.favProductImage{
+    width: 100%;
+    height: 50vh;
+}
+.favProductInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.favProductPrices{
+    font-weight: 600;
+}
+
+.favProductContainer:hover .favProductSetIcons {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2s ease-in-out, visibility 0s 0s;
+}
+
+.favProductSetIcons {
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in-out, visibility 0s 2s;
+}
+
+.favProductSetIcon:hover{
+  background-color: black;
+  color: white;
+}
+
+/* Animasyon ile sırayla gelen ikonlar */
+.favProductSetIcons .productSetIcon:nth-child(1) {
+  animation: slideInFromRight 0.5s ease-out 0.1s forwards;
+}
+
+.favProductSetIcons .productSetIcon:nth-child(2) {
+  animation: slideInFromRight 0.5s ease-out 0.2s forwards;
+}
+
+.favProductSetIcons .productSetIcon:nth-child(3) {
+  animation: slideInFromRight 0.5s ease-out 0.3s forwards;
+}
+
+.favProductSetIcons .productSetIcon:nth-child(4) {
+  animation: slideInFromRight 0.5s ease-out 0.4s forwards;
+}
+
+/* Kayma animasyonu sağdan sola doğru */
+@keyframes slideInFromRight {
+  from {
+      transform: translateX(50px); /* Başlangıçta 30px sağda */
+  }
+  to {
+      transform: translateX(0px); /* Sola kayarak orijinal konumuna gelir */
+  }
+}
+
+
+/* favsetıcons yavaşlatma  */
+
+/* Slider start /*Slider start   */
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  /* Slider images */
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Slide styles */
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1.2); /* Başlangıçta fotoğraf zoomlu */
+    transition: opacity 1s ease, transform 1s ease; /* Yavaşça büyüme ve küçülme animasyonu */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Aktif slayt için zoom efekti */
+  .slide.active {
+    opacity: 1;
+    transform: scale(1); /* Normal boyuta döner */
+  }
+  
+  /* Animasyonlu içerik */
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    color: black;
+    text-align: left;
+    max-width: 600px;
+    
+  }
+  
+  .slide-content h2,
+  .slide-content p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 1s ease, opacity 1s ease; /* Yazı animasyonu daha yavaş */
+  }
+  
+ 
+
+  .slide-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .slide-content p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: gray;
+    max-width: 80%;
+  }
+  
+  /* Button styles */
+  .slide-content .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: background-color 0.3s ease, transform 1s ease, opacity 1s ease;
+  }
+  
+  .slide-content .btn:hover {
+    background-color: green;
+  }
+  
+  /* Animation class for text */
+  .animate-text {
+    animation: fadeInUp 1s ease forwards; /* Yazı animasyonu daha yavaş */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Dot navigation */
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    /* background: rgba(255, 255, 255, 0.5); */
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    /* background: white; */
+    background: transparent;
+    border: 1px solid black;
+    width: 18px;
+    height: 18px;    
+}
+
+.dot:hover {
+    /* background: white; */
+    background: transparent;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;    
+}
+  
+  /* New Slider Start */
+  .animate-button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .animate-button:hover{
+    background-color: darkblue;
+  }
+
+/* Discovery kısmı css i start */
+
+
+/* More to Discover Section */
+.discover-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .discover-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .discover-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+  }
+  
+  .discover-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .discover-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .discover-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .discover-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .discover-card:hover .discover-image {
+    transform: scale(1.05);
+  }
+  
+  .discover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    text-align: left;
+  }
+  
+  .discover-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .discover-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+  
+  .discover-link:hover {
+    opacity: 1;
+  }
+  
+  .discover-link i {
+    transition: transform 0.3s ease;
+  }
+  
+  .discover-link:hover i {
+    transform: translateX(5px);
+  }
+  
+  /* Responsive Design for Discover Section */
+  @media (max-width: 768px) {
+    .discover-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .discover-title {
+      font-size: 2rem;
+    }
+  
+    .discover-image {
+      height: 300px;
+    }
+  
+    .discover-content h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+
+  /* Footer Start        */
+
+  /* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  padding: 80px 0 0;
+  margin-top: 100px;
+  border-top: 1px solid #eee;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Şirket Bilgileri Stili */
+.footer-company-info {
+  grid-column: span 1;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo .glowing-text {
+  font-size: 24px;
+  margin: 0;
+}
+
+.company-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #4e7661;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #3a5749;
+  transform: translateY(-3px);
+}
+
+/* Hızlı Linkler Stili */
+.footer-links {
+  grid-column: span 1;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-form h3 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #4e7661;
+}
+
+/* İletişim Bilgileri Stili */
+.footer-contact {
+  grid-column: span 1;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.footer-contact ul li i {
+  color: #4e7661;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* İletişim Formu Stili */
+.footer-form {
+  grid-column: span 1;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  background-color: white;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4e7661;
+}
+
+.submit-btn {
+  background-color: #4e7661;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #3a5749;
+  transform: translateY(-2px);
+}
+
+/* Alt Footer Stili */
+.footer-bottom {
+  margin-top: 60px;
+  padding: 25px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #666;
+  background-color: #f1f1f1;
+}
+
+.footer-bottom-links {
+  margin-top: 10px;
+}
+
+.footer-bottom-links a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #4e7661;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-company-info,
+  .footer-links,
+  .footer-contact,
+  .footer-form {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-contact ul li {
+    justify-content: center;
+  }
+}
