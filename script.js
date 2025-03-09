@@ -103,3 +103,138 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sayfa yüklendiğinde ilk slaytı başlat
   showSlide(currentSlide);
 });
+
+// Mobile product navigation
+function initMobileProductNavigation() {
+    const products = document.querySelectorAll('.productContainer');
+    const dots = document.querySelectorAll('.product-dot');
+    let currentProductIndex = 0;
+
+    function showProduct(index) {
+        // Tüm ürünleri gizle
+        products.forEach(product => {
+            product.style.display = 'none';
+        });
+
+        // Aktif ürünü göster
+        products[index].style.display = 'flex';
+
+        // Aktif dot'u güncelle
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+
+    // Dot'lara tıklama olayı ekle
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentProductIndex = index;
+            showProduct(currentProductIndex);
+        });
+    });
+
+    // Mobil görünümde ürün navigasyonunu başlat
+    function checkMobileView() {
+        if (window.innerWidth <= 576) {
+            showProduct(currentProductIndex);
+        } else {
+            // Desktop görünümde tüm ürünleri göster
+            products.forEach(product => {
+                product.style.display = 'flex';
+            });
+        }
+    }
+
+    // Sayfa yüklendiğinde ve pencere boyutu değiştiğinde kontrol et
+    window.addEventListener('load', checkMobileView);
+    window.addEventListener('resize', checkMobileView);
+}
+
+// Hamburger menü işlevselliği
+function initHamburgerMenu() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const closeButton = document.querySelector('.mobile-menu-close');
+
+    function toggleMenu() {
+        mobileMenu.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    closeButton.addEventListener('click', toggleMenu);
+    menuOverlay.addEventListener('click', toggleMenu);
+}
+
+// Fonksiyonları başlat
+document.addEventListener('DOMContentLoaded', () => {
+    initMobileProductNavigation();
+    initHamburgerMenu();
+});
+
+function initProductDots() {
+    const productContainers = document.querySelectorAll('.productContainer');
+    const productDots = document.querySelectorAll('.product-dot');
+    const totalProducts = productContainers.length;
+    
+    let itemsPerPage = 4; // Varsayılan değer
+
+    function updateItemsPerPage() {
+        if (window.innerWidth <= 576) {
+            itemsPerPage = 1;
+        } else if (window.innerWidth <= 990) {
+            itemsPerPage = 2;
+        } else if (window.innerWidth <= 1200) {
+            itemsPerPage = 3;
+        } else {
+            itemsPerPage = 4;
+        }
+    }
+
+    function showProducts(dotIndex) {
+        // Önce tüm ürünleri gizle
+        productContainers.forEach(container => {
+            container.style.display = 'none';
+        });
+
+        // Dot'ları güncelle
+        productDots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        // Seçili dot'u aktif yap
+        productDots[dotIndex].classList.add('active');
+
+        // İlgili ürünleri göster
+        const startIndex = dotIndex * itemsPerPage;
+        const endIndex = Math.min(startIndex + itemsPerPage, totalProducts);
+
+        for (let i = startIndex; i < endIndex; i++) {
+            if (productContainers[i]) {
+                productContainers[i].style.display = 'flex';
+            }
+        }
+    }
+
+    // Dot'lara tıklama olayı ekle
+    productDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showProducts(index);
+        });
+    });
+
+    // Sayfa yüklendiğinde ve yeniden boyutlandığında
+    window.addEventListener('resize', () => {
+        updateItemsPerPage();
+        showProducts(0); // İlk sayfayı göster
+    });
+
+    // Başlangıçta
+    updateItemsPerPage();
+    showProducts(0);
+}
+
+// Sayfa yüklendiğinde çalıştır
+document.addEventListener('DOMContentLoaded', () => {
+    initProductDots();
+});
