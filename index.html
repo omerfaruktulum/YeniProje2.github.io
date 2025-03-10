@@ -2,885 +2,904 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
+    <header class="header">
+      <!-- Hamburger Menu -->
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
 
-        <header class="header">
-            <!-- Hamburger Menu -->
-            <div class="hamburger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="inputBoxWrapper">
+          <div class="inputBox">
+            <input placeholder="Type and hit enter" type="text">
+            <button> <i class="fas fa-search"></i> </button>
 
-            <!-- Mobile Menu -->
-            <div class="mobile-menu">
-                <div class="mobile-menu-close">
-                    <i class="fas fa-times"></i>
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Elements</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pages</a></li>
-                </ul>
-            </div>
-            <div class="menu-overlay"></div>
-
-            <!-- İlk Bölüm: Menü -->
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <div class="menu-link">
-                            <a href="#">Home <i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="dropdown">
-                            <div class="dropdown-content two-columns">
-                                <div class="column">
-                                    <a href="#">Home 01</a>
-                                    <a href="#">Home 02</a>
-                                    <a href="#">Home 03</a>
-                                    <a href="#">Home 04</a>
-                                    <a href="#">Home 05</a>
-                                    <a href="#">Home 06</a>
-                                    <a href="#">Home 07</a>
-                                    <a href="#">Home 08</a>
-                                    <a href="#">Home 09</a>
-                                </div>
-                                <div class="column">
-                                    <a href="#">Home 10</a>
-                                    <a href="#">Home 11</a>
-                                    <a href="#">Home 12</a>
-                                    <a href="#">Home 13</a>
-                                    <a href="#">Home 14</a>
-                                    <a href="#">Home 15</a>
-                                    <a href="#">Home 16</a>
-                                    <a href="#">Home 17</a>
-                                    <a href="#">Home 18</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <div class="menu-link">
-                            <a href="#">Elements <i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="dropdown">
-                            <div class="dropdown-content four-columns">
-                                <div class="column">
-                                    <h4>Group 1</h4>
-                                    <a href="#">Element 1</a>
-                                    <a href="#">Element 2</a>
-                                    <a href="#">Element 3</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Group 2</h4>
-                                    <a href="#">Element 4</a>
-                                    <a href="#">Element 5</a>
-                                    <a href="#">Element 6</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Group 3</h4>
-                                    <a href="#">Element 7</a>
-                                    <a href="#">Element 8</a>
-                                    <a href="#">Element 9</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Group 4</h4>
-                                    <a href="#">Element 10</a>
-                                    <a href="#">Element 11</a>
-                                    <a href="#">Element 12</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <div class="menu-link">
-                            <a href="#">Shop <i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="dropdown">
-                            <div class="dropdown-content four-columns">
-                                <div class="column">
-                                    <h4>Shop Catalog</h4>
-                                    <a href="#">Shop Layout V1</a>
-                                    <a href="#">Shop Layout V2</a>
-                                    <a href="#">Shop Layout V3</a>
-                                    <a href="#">Shop Layout V4</a>
-                                    <a href="#">Shop Layout V5</a>
-                                    <a href="#">Shop Layout V6</a>
-                                    <a href="#">Shop Layout V7</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Product Page</h4>
-                                    <a href="#">Product Layout v1</a>
-                                    <a href="#">Product Layout v2</a>
-                                    <a href="#">Product Layout v3</a>
-                                    <a href="#">Product Layout v4</a>
-                                    <a href="#">Product Layout v5</a>
-                                    <a href="#">With Video</a>
-                                    <a href="#">Width Sidebar</a>
-                                    <a href="#">Width Countdown</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Product Types</h4>
-                                    <a href="#">Product Simple</a>
-                                    <a href="#">Product Variable</a>
-                                    <a href="#">Product External / Affiliate</a>
-                                    <a href="#">Product Grouped</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Shop Pages</h4>
-                                    <a href="#">Shopping Cart</a>
-                                    <a href="#">Checkout</a>
-                                    <a href="#">My Account</a>
-                                    <a href="#">Order Tracking</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <div class="menu-link">
-                            <a href="#">Blog <i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="dropdown">
-                            <div class="dropdown-content one-column">
-                                <div class="column">
-                                    <a href="#">Blog Standard</a>
-                                    <a href="#">Blog Grid</a>
-                                    <a href="#">Blog Grid 02</a>
-                                    <a href="#">Blog Alternate</a>
-                                    <a href="#">Blog Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <div class="menu-link">
-                            <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="dropdown">
-                            <div class="dropdown-content one-column">
-                                <div class="column">
-                                    <a href="#">About Us</a>
-                                    <a href="#">Contact</a>
-                                    <a href="#">FAQ</a>
-                                    <a href="#">Store</a>
-                                    <a href="#">404</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- İkinci Bölüm: Glowing Yazı (Düz Logo) -->
-            <div class="glowing-text-wrapper">
-                <p class="glowing-text"> GLOWING</p>
-            </div>
-
-            <!-- Üçüncü Bölüm: İkonlar -->
-            <div class="icons">
-                <div class="icon-wrapper">
-                    <i class="far fa-user"></i>
-                </div>
-                <div class="icon-wrapper">
-                    <i class="far fa-heart"></i>
-                </div>
-                <div class="icon-wrapper">
-                    <i class="far fa-star"></i>
-                    <span class="icon-badge">3</span>
-                </div>
-                <div class="icon-wrapper">
-                    <i class="far fa-shopping-cart"></i>
-                    <span class="icon-badge">5</span>
-                </div>
-            </div>
-
-            <!-- Mobile Search Icon -->
-            <div class="mobile-search">
-                <i class="fas fa-search"></i>
-            </div>
-
-        </header>
-
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide active" style="background-image: url('assets/slider/Slider1.png')">
-                    <div class="slide-content">
-                        <span>ESSENSTIAL ITEMS</span>
-                        <h2 class="animate-text">Get The Perfectly Hydrated Skin
-                        </h2>
-                        <p class="animate-text" style="">
-                            Made using clean, non-toxic ingredients, our products are designed for everyone.
-                        </p>
-                        <a href="#" class="btn animate-text ">Shop Now</a>
-                    </div>
-                </div>
-                <div class="slide" style="background-image: url('assets/slider/Slider2.png')">
-                    <div class="slide-content">
-                        <span>ESSENSTIAL ITEMS</span>
-
-                        <h2 class="animate-text">Be Your Kind of Beauty
-                        </h2>
-                        <p class="animate-text">Made using clean, non-toxic ingredients, our products are designed for
-                            everyone.
-                        </p>
-                        <a href="#" class="btn animate-text ">Shop Now</a>
-                    </div>
-                </div>
-                <div class="slide" style="background-image: url('assets/slider/Slider3.png')">
-                    <div class="slide-content">
-                        <span>ESSENSTIAL ITEMS</span>
-                        <h2 class="animate-text">Beauty Inspired by Real Life
-                        </h2>
-                        <p class="animate-text">Made using clean, non-toxic ingredients, our products are designed for
-                            everyone.
-                        </p>
-                        <a href="#" class="btn animate-text ">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-            </div>
+          </div>
         </div>
-
-        
-
-        <div class="container-wrapper">
-            <div class="productsTitle">
-                <h1>Our Featured Products</h1>
-                <p class="productsTitleMetin">Get the skin you want to feel</p>
-            </div>
-
-            <div class="productMainContainer">
-
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-01-05.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-02-3.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-03-4.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-06-3.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-07-04-2.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-08-04.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-12-3.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-17-1-1.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="productContainer">
-                    <img class="productImage" src="/assets/product-14-3.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>42.00$ - 45.00$</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="productSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-                <!-- Product Dots for Mobile -->
-       
-
-            </div>
-            <div class="product-dots">
-                <span class="product-dot active"></span>
-                <span class="product-dot"></span>
-                <span class="product-dot"></span>
-                <span class="product-dot"></span>
-            </div>
-
-            <div class="serumsDivWrapper">
-
-
-                <div class="serumsDiv">
-                    <img src="https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-01.jpg"
-                        alt="resim bulunamadı">
-                    <div class="serumsInfo">
-                        <div>
-                            <p class="serumCollectionName">NEW COLLECTION
-                            </p>
-                            <p class="serumName">Intensive Glow C+</p>
-                            <p class="serumName">Serum</p>
-                        </div>
-                        <div class="serumsInfoButtonWrapper">
-                            <a href="#" class="serumsInfoButton">Explore Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="serumsDiv">
-                    <img src="https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-02.jpg"
-                        alt="resim bulunamadı">
-                    <div class="serumsInfo">
-                        <div>
-                            <p class="serumCollectionName">25% off Everything
-                            </p>
-                            <p class="serumName">Makeup with extended range in</p>
-                            <p class="serumName">colors for every human.</p>
-                        </div>
-                        <div class="serumsInfoButtonWrapper">
-                            <a href="#" class="serumsInfoButton">Shop Sale</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+        <div class="mobile-menu-close">
+          <i class="fas fa-times"></i>
         </div>
+        <ul>
+          <li><a href="#">HOME</a><i class="fas fa-chevron-right"></i></li>
+          <li><a href="#">ELEMENTS</a><i class="fas fa-chevron-right"></i></li>
+          <li><a href="#">SHOP</a><i class="fas fa-chevron-right"></i></li>
+          <li><a href="#">BLOG</a><i class="fas fa-chevron-right"></i></li>
+          <li><a href="#">PAGES</a><i class="fas fa-chevron-right"></i></li>
+        </ul>
+      </div>
+      <div class="menu-overlay"></div>
 
-
-        <div class="HomeScreenIconsWrapper">
-            <div class="HomeScreenIcon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                    color="#4e7661">
-                    <path d="M35.2903 35L35 63.1122" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 29, 31; stroke-dashoffset: 0px;" />
-                    <path
-                        d="M60.1562 47.9424V22.0575C60.1562 21.6702 60.0534 21.2897 59.8582 20.9551C59.6629 20.6205 59.3824 20.3438 59.0451 20.1532L36.0764 7.17084C35.748 6.98523 35.3772 6.8877 35 6.8877C34.6228 6.8877 34.252 6.98523 33.9236 7.17084L10.9549 20.1532C10.6176 20.3438 10.3371 20.6205 10.1418 20.9551C9.94662 21.2897 9.84375 21.6702 9.84375 22.0575V47.9424C9.84375 48.3298 9.94662 48.7102 10.1418 49.0448C10.3371 49.3794 10.6176 49.6561 10.9549 49.8467L33.9236 62.8291C34.252 63.0147 34.6228 63.1122 35 63.1122C35.3772 63.1122 35.748 63.0147 36.0764 62.8291L59.0451 49.8467C59.3824 49.6561 59.6629 49.3794 59.8582 49.0448C60.0534 48.7102 60.1563 48.3298 60.1562 47.9424V47.9424Z"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                        style="stroke-dasharray: 172, 174; stroke-dashoffset: 0px;" />
-                    <path d="M59.8566 20.9527L35.2904 35L10.1454 20.9497" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round"
-                        style="stroke-dasharray: 58, 60; stroke-dashoffset: 0px;" />
-                </svg>
-                <p class="HomeScreenIconTitle">Free Shipping </p>
-                <p class="HomeScreenIconText">Free Shipping for orders over $130 </p>
+      <!-- İlk Bölüm: Menü -->
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-link">
+              <a href="#">Home <i class="fas fa-chevron-down"></i></a>
             </div>
-
-            <div class="HomeScreenIcon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                    color="#4e7661">
-                    <path
-                        d="M13.125 28.4375C13.125 48.125 35 63.4375 35 63.4375C35 63.4375 56.875 48.125 56.875 28.4375C56.875 22.6359 54.5703 17.0719 50.468 12.9695C46.3656 8.86718 40.8016 6.5625 35 6.5625C29.1984 6.5625 23.6344 8.86718 19.532 12.9695C15.4297 17.0719 13.125 22.6359 13.125 28.4375Z"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                        style="stroke-dasharray: 155, 157; stroke-dashoffset: 0px;" />
-                    <path d="M35 6.5625L35 63.4375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 57, 59; stroke-dashoffset: 0px;" />
-                    <path d="M35 50.3125L13.125 28.4375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 31, 33; stroke-dashoffset: 0px;" />
-                    <path d="M35 37.1875L15.7857 17.9732" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 28, 30; stroke-dashoffset: 0px;" />
-                    <path d="M35 24.0625L21.8742 10.9367" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 19, 21; stroke-dashoffset: 0px;" />
-                    <path d="M35 24.0625L21.8742 10.9367" stroke="currentColor" stroke-width="1.5"
-                        style="stroke-dasharray: 19, 21; stroke-dashoffset: 0px;" />
-                </svg>
-                <p class="HomeScreenIconTitle">Returns
-                </p>
-                <p class="HomeScreenIconText">Within 30 days for an exchange.
-                </p>
-
+            <div class="dropdown">
+              <div class="dropdown-content two-columns">
+                <div class="column">
+                  <a href="#">Home 01</a>
+                  <a href="#">Home 02</a>
+                  <a href="#">Home 03</a>
+                  <a href="#">Home 04</a>
+                  <a href="#">Home 05</a>
+                  <a href="#">Home 06</a>
+                  <a href="#">Home 07</a>
+                  <a href="#">Home 08</a>
+                  <a href="#">Home 09</a>
+                </div>
+                <div class="column">
+                  <a href="#">Home 10</a>
+                  <a href="#">Home 11</a>
+                  <a href="#">Home 12</a>
+                  <a href="#">Home 13</a>
+                  <a href="#">Home 14</a>
+                  <a href="#">Home 15</a>
+                  <a href="#">Home 16</a>
+                  <a href="#">Home 17</a>
+                  <a href="#">Home 18</a>
+                </div>
+              </div>
             </div>
-            <div class="HomeScreenIcon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                    color="#4e7661">
-                    <path
-                        d="M19.5735 39.375L8.75 48.125V13.125C8.75 12.5448 8.98047 11.9884 9.3907 11.5782C9.80094 11.168 10.3573 10.9375 10.9375 10.9375H45.9375C46.5177 10.9375 47.0741 11.168 47.4843 11.5782C47.8945 11.9884 48.125 12.5448 48.125 13.125V37.1875C48.125 37.7677 47.8945 38.3241 47.4843 38.7343C47.0741 39.1445 46.5177 39.375 45.9375 39.375H19.5735Z"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        style="stroke-dasharray: 145, 147; stroke-dashoffset: 0px;" />
-                    <path
-                        d="M21.875 39.375V50.3125C21.875 50.8927 22.1055 51.4491 22.5157 51.8593C22.9259 52.2695 23.4823 52.5 24.0625 52.5H50.4266L61.25 61.25V26.25C61.25 25.6698 61.0195 25.1134 60.6093 24.7032C60.1991 24.293 59.6427 24.0625 59.0625 24.0625H48.125"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        style="stroke-dasharray: 105, 107; stroke-dashoffset: 0px;" />
-                </svg>
-                <p class="HomeScreenIconTitle">Online Support
-                </p>
-                <p class="HomeScreenIconText">24 hours a day, 7 days a week
-                </p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-link">
+              <a href="#">Elements <i class="fas fa-chevron-down"></i></a>
             </div>
+            <div class="dropdown">
+              <div class="dropdown-content four-columns">
+                <div class="column">
+                  <h4>Group 1</h4>
+                  <a href="#">Element 1</a>
+                  <a href="#">Element 2</a>
+                  <a href="#">Element 3</a>
+                </div>
+                <div class="column">
+                  <h4>Group 2</h4>
+                  <a href="#">Element 4</a>
+                  <a href="#">Element 5</a>
+                  <a href="#">Element 6</a>
+                </div>
+                <div class="column">
+                  <h4>Group 3</h4>
+                  <a href="#">Element 7</a>
+                  <a href="#">Element 8</a>
+                  <a href="#">Element 9</a>
+                </div>
+                <div class="column">
+                  <h4>Group 4</h4>
+                  <a href="#">Element 10</a>
+                  <a href="#">Element 11</a>
+                  <a href="#">Element 12</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-link">
+              <a href="#">Shop <i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-content four-columns">
+                <div class="column">
+                  <h4>Shop Catalog</h4>
+                  <a href="#">Shop Layout V1</a>
+                  <a href="#">Shop Layout V2</a>
+                  <a href="#">Shop Layout V3</a>
+                  <a href="#">Shop Layout V4</a>
+                  <a href="#">Shop Layout V5</a>
+                  <a href="#">Shop Layout V6</a>
+                  <a href="#">Shop Layout V7</a>
+                </div>
+                <div class="column">
+                  <h4>Product Page</h4>
+                  <a href="#">Product Layout v1</a>
+                  <a href="#">Product Layout v2</a>
+                  <a href="#">Product Layout v3</a>
+                  <a href="#">Product Layout v4</a>
+                  <a href="#">Product Layout v5</a>
+                  <a href="#">With Video</a>
+                  <a href="#">Width Sidebar</a>
+                  <a href="#">Width Countdown</a>
+                </div>
+                <div class="column">
+                  <h4>Product Types</h4>
+                  <a href="#">Product Simple</a>
+                  <a href="#">Product Variable</a>
+                  <a href="#">Product External / Affiliate</a>
+                  <a href="#">Product Grouped</a>
+                </div>
+                <div class="column">
+                  <h4>Shop Pages</h4>
+                  <a href="#">Shopping Cart</a>
+                  <a href="#">Checkout</a>
+                  <a href="#">My Account</a>
+                  <a href="#">Order Tracking</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-link">
+              <a href="#">Blog <i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-content one-column">
+                <div class="column">
+                  <a href="#">Blog Standard</a>
+                  <a href="#">Blog Grid</a>
+                  <a href="#">Blog Grid 02</a>
+                  <a href="#">Blog Alternate</a>
+                  <a href="#">Blog Page</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-link">
+              <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-content one-column">
+                <div class="column">
+                  <a href="#">About Us</a>
+                  <a href="#">Contact</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Store</a>
+                  <a href="#">404</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
 
-            <div class="HomeScreenIcon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                    color="#4e7661">
-                    <path
-                        d="M61.25 15.3125H8.75C7.54188 15.3125 6.5625 16.2919 6.5625 17.5V52.5C6.5625 53.7081 7.54188 54.6875 8.75 54.6875H61.25C62.4581 54.6875 63.4375 53.7081 63.4375 52.5V17.5C63.4375 16.2919 62.4581 15.3125 61.25 15.3125Z"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        style="stroke-dasharray: 189, 191; stroke-dashoffset: 0px;" />
-                    <path d="M45.9358 45.9375H54.6858" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 9, 11; stroke-dashoffset: 0px;" />
-                    <path d="M32.8108 45.9375H37.1858" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0px;" />
-                    <path d="M6.56079 26.4829H63.4358" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" style="stroke-dasharray: 57, 59; stroke-dashoffset: 0px;" />
-                </svg>
-                <p class="HomeScreenIconTitle">Flexible Payment
-                </p>
-                <p class="HomeScreenIconText">Pay with Multiple Credit Cards
-                </p>
-            </div>
+      <!-- İkinci Bölüm: Glowing Yazı (Düz Logo) -->
+      <div class="glowing-text-wrapper">
+        <p class="glowing-text">GLOWING</p>
+      </div>
+
+      <!-- Üçüncü Bölüm: İkonlar -->
+      <div class="icons">
+        <div class="icon-wrapper">
+          <i class="far fa-user"></i>
         </div>
-
-        <div class="customerFavWrapper">
-            <p class="customerFavTitle">Customer Favorite Beauty Essentials </p>
-            <p class="customerFavText">Made using clean, non-toxic ingredients, our products </p>
-            <p class="customerFavText">are designed for everyone.</p>
+        <div class="icon-wrapper">
+          <i class="far fa-heart"></i>
         </div>
-
-        <div class="favProductsWrapper">
-            <div class="favProductPerson">
-                <img class="fav-person-image" src="https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-21.jpg" alt="resim bulunamadı">
-                <div class="favProductPersonInfo">
-                    <p class="favProductPersonTitle"><a href="#">Empower Yourself</a></p>
-                    <p class="favProductPersonText">Get the skin you want to feel</p>
-                    <div class="favProductPersonButtonWrapper">
-                        <a href="#" class="favProductPersonButton">Explore Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="favProducts">
-                <div class="favProductContainer">
-                    <img class="favProductImage" src="/assets/favProducts/product-11-3.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>$12.00 – $20.00</span>
-                        <p class='productName'>Shield Conditioner</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="favProductSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-                <div class="favProductContainer">
-                    <img class="favProductImage" src="/assets/favProducts/product-13-4.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>$20.00</span>
-                        <p class='productName'>Perfecting Facial Oil</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="favProductSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="favProductContainer">
-                    <img class="favProductImage" src="/assets/favProducts/product-10-3.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'> <span style="text-decoration:line-through;">$25.00</span>
-                            $19.00</span>
-                        <p class='productName'>Enriched Hand & Body Wash</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="favProductSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="favProductContainer">
-                    <img class="favProductImage" src="/assets/favProducts/product-12-3.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>$45.00</span>
-                        <p class='productName'>Shield Shampoo</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="favProductSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-                <div class="favProductContainer">
-                    <img class="favProductImage" src="/assets/favProducts/product-08-04.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>$90.00</span>
-                        <p class='productName'>Enriched Hand Wash</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="favProductSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="favProductContainer">
-                    <img class="favProductImage" src="/assets/favProducts/product-07-04.jpg" width="330px" height="440px"
-                        alt="resim bulunamadı" />
-                    <div class="favProductInfoContainer">
-                        <span class='favProductPrices'>$18.00 – $90.00</span>
-                        <p class='productName'>Scalp Moisturizing Cream</p>
-                        <div class="productIcons">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="favProductSetIcons">
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
-                        <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
-                    </div>
-                </div>
-
-
-            </div>
-
+        <div class="icon-wrapper">
+          <i class="far fa-star"></i>
+          <span class="icon-badge">3</span>
         </div>
+        <div class="icon-wrapper">
+          <i class="far fa-shopping-cart"></i>
+          <span class="icon-badge">5</span>
+        </div>
+      </div>
 
-        <!-- More to Discover Section -->
-        <div class="discover-section">
-            <h2 class="discover-title">More to Discover</h2>
-            <p class="discover-subtitle">
-              Our bundles were designed to conveniently package your tanning
-              essentials while saving you money.
+      <!-- Mobile Search Icon -->
+      <div class="mobile-search">
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active" style="background-image: url('assets/slider/Slider1.png')">
+          <div class="slide-content">
+            <span>ESSENSTIAL ITEMS</span>
+            <h2 class="animate-text">Get The Perfectly Hydrated Skin</h2>
+            <p class="animate-text">
+              Made using clean, non-toxic ingredients, our products are
+              designed for everyone.
             </p>
-      
-            <div class="discover-cards">
-              <div class="discover-card">
-                <img
-                  src="assets/box1.jpg"
-                  alt="Summer Collection"
-                  class="discover-image"
-                />
-                <div class="discover-content">
-                  <h3>Summer Collection</h3>
-                  <a href="#" class="discover-link"
-                    >Shop Now <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-      
-              <div class="discover-card">
-                <img
-                  src="assets/box2.jpg"
-                  alt="From Our Blog"
-                  class="discover-image"
-                />
-                <div class="discover-content">
-                  <h3>From Our Blog</h3>
-                  <a href="#" class="discover-link"
-                    >Read More <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
+            <a href="#" class="btn animate-text">Shop Now</a>
           </div>
+        </div>
+        <div class="slide" style="background-image: url('assets/slider/Slider2.png')">
+          <div class="slide-content">
+            <span>ESSENSTIAL ITEMS</span>
 
-          <!-- Footer Section -->
-        <footer class="footer">
-          <div class="footer-content">
-            <!-- Logo ve Şirket Bilgileri -->
-            <div class="footer-company-info">
-              <div class="footer-logo">
-                <p class="glowing-text">GLOWING</p>
-              </div>
-              <p class="company-description">
-                Doğal ve organik cilt bakım ürünleriyle güzelliğinizi ön plana
-                çıkarın. Cildinize özel çözümler için bizi tercih edin.
-              </p>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-
-            <!-- Hızlı Linkler -->
-            <div class="footer-links">
-              <h3>Hızlı Linkler</h3>
-              <ul>
-                <li><a href="#">Hakkımızda</a></li>
-                <li><a href="#">Ürünlerimiz</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">SSS</a></li>
-                <li><a href="#">İletişim</a></li>
-              </ul>
-            </div>
-
-            <!-- İletişim Bilgileri -->
-            <div class="footer-contact">
-              <h3>İletişim Bilgileri</h3>
-              <ul>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span
-                    >Merkez Mah. Güzellik Cad. No:123<br />İstanbul, Türkiye</span
-                  >
-                </li>
-                <li>
-                  <i class="fas fa-phone"></i>
-                  <span>+90 (212) 123 45 67</span>
-                </li>
-                <li>
-                  <i class="fas fa-envelope"></i>
-                  <span>info@glowing.com</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- İletişim Formu -->
-            <div class="footer-form">
-              <h3>Bize Ulaşın</h3>
-              <form class="contact-form">
-                <div class="form-group">
-                  <input type="text" placeholder="Adınız" required />
-                </div>
-                <div class="form-group">
-                  <input type="email" placeholder="E-posta Adresiniz" required />
-                </div>
-                <div class="form-group">
-                  <textarea placeholder="Mesajınız" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Gönder</button>
-              </form>
-            </div>
+            <h2 class="animate-text">Be Your Kind of Beauty</h2>
+            <p class="animate-text">
+              Made using clean, non-toxic ingredients, our products are
+              designed for everyone.
+            </p>
+            <a href="#" class="btn animate-text">Shop Now</a>
           </div>
-
-          <!-- Alt Footer -->
-          <div class="footer-bottom">
-            <p>&copy; 2024 Glowing. Tüm hakları saklıdır.</p>
-            <div class="footer-bottom-links">
-              <a href="#">Gizlilik Politikası</a>
-              <a href="#">Kullanım Şartları</a>
-              <a href="#">KVKK</a>
-            </div>
+        </div>
+        <div class="slide" style="background-image: url('assets/slider/Slider3.png')">
+          <div class="slide-content">
+            <span>ESSENSTIAL ITEMS</span>
+            <h2 class="animate-text">Beauty Inspired by Real Life</h2>
+            <p class="animate-text">
+              Made using clean, non-toxic ingredients, our products are
+              designed for everyone.
+            </p>
+            <a href="#" class="btn animate-text">Shop Now</a>
           </div>
-        </footer>
+        </div>
+      </div>
 
-
-        <script src="script.js">
-
-        </script>
-
+      <div class="dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
     </div>
 
+    <div class="container-wrapper">
+      <div class="productsTitle">
+        <h1>Our Featured Products</h1>
+        <p class="productsTitleMetin">Get the skin you want to feel</p>
+      </div>
+
+      <div class="productMainContainer">
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-01-05.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.src=products.Product1.image2" onmouseout="this.src=products.Product1.image1" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">15.00$ - 20.00$</span>
+            <p class="productName">Natural Coconut Cleansing Oil</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-02-3.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); setTimeout(() => { this.src=products.Product2.image2; this.classList.remove('fade-out'); }, 500);"
+            onmouseout="this.src=products.Product2.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">42.00$ - 45.00$</span>
+            <p class="productName">Scalp Moisturizing Cream</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-03-4.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); this.src=products.Product3.image2; this.classList.remove('fade-out');"
+            onmouseout="this.src=products.Product3.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">45.00$</span>
+            <p class="productName">Supreme Polishing Treatment</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-06-3.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); setTimeout(() => { this.src=products.Product4.image2; this.classList.remove('fade-out'); }, 500);"
+            onmouseout="this.src=products.Product4.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">30.00$ - 55.00$</span>
+            <p class="productName">Shield Spray</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-07-04-2.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); this.src=products.Product5.image2; this.classList.remove('fade-out');"
+            onmouseout="this.src=products.Product5.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">18.00$ - 90.00$</span>
+            <p class="productName">Enriched Duo</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-08-04.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); this.src=products.Product6.image2; this.classList.remove('fade-out');"
+            onmouseout="this.src=products.Product6.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">90.00$</span>
+            <p class="productName">Enriched Hand Wash</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-12-3.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); this.src=products.Product7.image2; this.classList.remove('fade-out');"
+            onmouseout="this.src=products.Product7.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">45.00$</span>
+            <p class="productName">Shield Shampoo</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-17-1-1.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); this.src=products.Product8.image2; this.classList.remove('fade-out');"
+            onmouseout="this.src=products.Product8.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">11.05$</span>
+            <p class="productName">Hideaway Mirror</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="productContainer">
+          <img class="productImage" src="assets/product-14-3.jpg" width="330px" height="440px" alt="resim bulunamadı"
+            onmouseover="this.classList.add('fade-out'); this.src=products.Product9.image2; this.classList.remove('fade-out');"
+            onmouseout="this.src=products.Product9.image1;" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices"><span style="text-decoration: line-through;color: grey;">3.00$</span>  2.00$</span>
+            <p class="productName">Detangling Comb</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="productSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+        <!-- Product Dots for Mobile -->
+      </div>
+      <div class="product-dots">
+        <span class="product-dot active"></span>
+        <span class="product-dot"></span>
+        <span class="product-dot"></span>
+        <span class="product-dot"></span>
+      </div>
+
+      <div class="serumsDivWrapper">
+        <div class="serumsDiv">
+          <img src="https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-01.jpg" alt="resim bulunamadı" />
+          <div class="serumsInfo">
+            <div>
+              <p class="serumCollectionName">NEW COLLECTION</p>
+              <p class="serumName">Intensive Glow C+</p>
+              <p class="serumName">Serum</p>
+            </div>
+            <div class="serumsInfoButtonWrapper">
+              <a href="#" class="serumsInfoButton">Explore Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="serumsDiv">
+          <img src="https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-02.jpg" alt="resim bulunamadı" />
+          <div class="serumsInfo">
+            <div>
+              <p class="serumCollectionName">25% off Everything</p>
+              <p class="serumName">Makeup with extended range in</p>
+              <p class="serumName">colors for every human.</p>
+            </div>
+            <div class="serumsInfoButtonWrapper">
+              <a href="#" class="serumsInfoButton">Shop Sale</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="HomeScreenIconsWrapper">
+      <div class="HomeScreenIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" color="#4e7661">
+          <path d="M35.2903 35L35 63.1122" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 29, 31; stroke-dashoffset: 0px" />
+          <path
+            d="M60.1562 47.9424V22.0575C60.1562 21.6702 60.0534 21.2897 59.8582 20.9551C59.6629 20.6205 59.3824 20.3438 59.0451 20.1532L36.0764 7.17084C35.748 6.98523 35.3772 6.8877 35 6.8877C34.6228 6.8877 34.252 6.98523 33.9236 7.17084L10.9549 20.1532C10.6176 20.3438 10.3371 20.6205 10.1418 20.9551C9.94662 21.2897 9.84375 21.6702 9.84375 22.0575V47.9424C9.84375 48.3298 9.94662 48.7102 10.1418 49.0448C10.3371 49.3794 10.6176 49.6561 10.9549 49.8467L33.9236 62.8291C34.252 63.0147 34.6228 63.1122 35 63.1122C35.3772 63.1122 35.748 63.0147 36.0764 62.8291L59.0451 49.8467C59.3824 49.6561 59.6629 49.3794 59.8582 49.0448C60.0534 48.7102 60.1563 48.3298 60.1562 47.9424V47.9424Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            style="stroke-dasharray: 172, 174; stroke-dashoffset: 0px" />
+          <path d="M59.8566 20.9527L35.2904 35L10.1454 20.9497" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 58, 60; stroke-dashoffset: 0px" />
+        </svg>
+        <p class="HomeScreenIconTitle">Free Shipping</p>
+        <p class="HomeScreenIconText">Free Shipping for orders over $130</p>
+      </div>
+
+      <div class="HomeScreenIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" color="#4e7661">
+          <path
+            d="M13.125 28.4375C13.125 48.125 35 63.4375 35 63.4375C35 63.4375 56.875 48.125 56.875 28.4375C56.875 22.6359 54.5703 17.0719 50.468 12.9695C46.3656 8.86718 40.8016 6.5625 35 6.5625C29.1984 6.5625 23.6344 8.86718 19.532 12.9695C15.4297 17.0719 13.125 22.6359 13.125 28.4375Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            style="stroke-dasharray: 155, 157; stroke-dashoffset: 0px" />
+          <path d="M35 6.5625L35 63.4375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 57, 59; stroke-dashoffset: 0px" />
+          <path d="M35 50.3125L13.125 28.4375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 31, 33; stroke-dashoffset: 0px" />
+          <path d="M35 37.1875L15.7857 17.9732" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 28, 30; stroke-dashoffset: 0px" />
+          <path d="M35 24.0625L21.8742 10.9367" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 19, 21; stroke-dashoffset: 0px" />
+          <path d="M35 24.0625L21.8742 10.9367" stroke="currentColor" stroke-width="1.5"
+            style="stroke-dasharray: 19, 21; stroke-dashoffset: 0px" />
+        </svg>
+        <p class="HomeScreenIconTitle">Returns</p>
+        <p class="HomeScreenIconText">Within 30 days for an exchange.</p>
+      </div>
+      <div class="HomeScreenIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" color="#4e7661">
+          <path
+            d="M19.5735 39.375L8.75 48.125V13.125C8.75 12.5448 8.98047 11.9884 9.3907 11.5782C9.80094 11.168 10.3573 10.9375 10.9375 10.9375H45.9375C46.5177 10.9375 47.0741 11.168 47.4843 11.5782C47.8945 11.9884 48.125 12.5448 48.125 13.125V37.1875C48.125 37.7677 47.8945 38.3241 47.4843 38.7343C47.0741 39.1445 46.5177 39.375 45.9375 39.375H19.5735Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            style="stroke-dasharray: 145, 147; stroke-dashoffset: 0px" />
+          <path
+            d="M21.875 39.375V50.3125C21.875 50.8927 22.1055 51.4491 22.5157 51.8593C22.9259 52.2695 23.4823 52.5 24.0625 52.5H50.4266L61.25 61.25V26.25C61.25 25.6698 61.0195 25.1134 60.6093 24.7032C60.1991 24.293 59.6427 24.0625 59.0625 24.0625H48.125"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            style="stroke-dasharray: 105, 107; stroke-dashoffset: 0px" />
+        </svg>
+        <p class="HomeScreenIconTitle">Online Support</p>
+        <p class="HomeScreenIconText">24 hours a day, 7 days a week</p>
+      </div>
+
+      <div class="HomeScreenIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" color="#4e7661">
+          <path
+            d="M61.25 15.3125H8.75C7.54188 15.3125 6.5625 16.2919 6.5625 17.5V52.5C6.5625 53.7081 7.54188 54.6875 8.75 54.6875H61.25C62.4581 54.6875 63.4375 53.7081 63.4375 52.5V17.5C63.4375 16.2919 62.4581 15.3125 61.25 15.3125Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            style="stroke-dasharray: 189, 191; stroke-dashoffset: 0px" />
+          <path d="M45.9358 45.9375H54.6858" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 9, 11; stroke-dashoffset: 0px" />
+          <path d="M32.8108 45.9375H37.1858" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0px" />
+          <path d="M6.56079 26.4829H63.4358" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="stroke-dasharray: 57, 59; stroke-dashoffset: 0px" />
+        </svg>
+        <p class="HomeScreenIconTitle">Flexible Payment</p>
+        <p class="HomeScreenIconText">Pay with Multiple Credit Cards</p>
+      </div>
+    </div>
+
+    <section class="testimonials-section">
+      <div class="as-seen-in-container">
+        <h2 class="section-title">As seen in</h2>
+
+        <div class="brand-testimonial-wrapper">
+          <!-- Parker & Co. -->
+          <div class="brand-testimonial">
+            <div class="brand-logo">
+              <img src="assets/logo01.png" alt="Parker & Co." />
+            </div>
+            <blockquote style="font-weight: bold" class="testimonial-text">
+              "Also the customer service is phenomenal. I would purchase
+              again."
+            </blockquote>
+          </div>
+
+          <!-- Hayden -->
+          <div class="brand-testimonial">
+            <div class="brand-logo">
+              <img src="assets/logo02.png" alt="Hayden" />
+            </div>
+            <blockquote style="font-weight: bold" class="testimonial-text">
+              "Great product line. Very attentive staff to deal with."
+            </blockquote>
+          </div>
+
+          <!-- Good Mood -->
+          <div class="brand-testimonial">
+            <div class="brand-logo">
+              <img src="assets/logo03.png" alt="Good Mood" />
+            </div>
+            <blockquote style="font-weight: bold" class="testimonial-text">
+              "Looking to affordably upgrade your everyday dinnerware? Look no
+              further than e.Space"
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+     
+    </style>
+
+    <div class="customerFavWrapper">
+      <p class="customerFavTitle">Customer Favorite Beauty Essentials</p>
+      <p class="customerFavText">
+        Made using clean, non-toxic ingredients, our products
+      </p>
+      <p class="customerFavText">are designed for everyone.</p>
+    </div>
+
+    <div class="favProductsWrapper">
+      <div class="favProductPerson">
+        <img class="fav-person-image" src="https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-21.jpg"
+          alt="resim bulunamadı" />
+        <div class="favProductPersonInfo">
+          <p class="favProductPersonTitle">
+            <a href="#">Empower Yourself</a>
+          </p>
+          <p class="favProductPersonText">Get the skin you want to feel</p>
+          <div class="favProductPersonButtonWrapper">
+            <a href="#" class="favProductPersonButton">Explore Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="favProducts">
+        <div class="favProductContainer">
+          <img class="favProductImage" src="assets/favProducts/product-11-3.jpg" width="330px" height="440px"
+            alt="resim bulunamadı" onmouseover="this.src=products.Product10.image2"
+            onmouseout="this.src=products.Product10.image1" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">$12.00 – $20.00</span>
+            <p class="productName">Shield Conditioner</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="favProductSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+        <div class="favProductContainer">
+          <img class="favProductImage" src="assets/favProducts/product-13-4.jpg" width="330px" height="440px"
+            alt="resim bulunamadı" onmouseover="this.src=products.Product11.image2"
+            onmouseout="this.src=products.Product11.image1" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">$20.00</span>
+            <p class="productName">Perfecting Facial Oil</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="favProductSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="favProductContainer">
+          <img class="favProductImage" src="assets/favProducts/product-10-3.jpg" width="330px" height="440px"
+            alt="resim bulunamadı" onmouseover="this.src=products.Product12.image2"
+            onmouseout="this.src=products.Product12.image1" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">
+              <span style="text-decoration: line-through">$25.00</span>
+              $19.00</span>
+            <p class="productName">Enriched Hand & Body Wash</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="favProductSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="favProductContainer">
+          <img class="favProductImage" src="assets/favProducts/product-12-3.jpg" width="330px" height="440px"
+            alt="resim bulunamadı" onmouseover="this.src=products.Product7.image2"
+            onmouseout="this.src=products.Product7.image1" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">$45.00</span>
+            <p class="productName">Shield Shampoo</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="favProductSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+        <div class="favProductContainer">
+          <img class="favProductImage" src="assets/favProducts/product-08-04.jpg" width="330px" height="440px"
+            alt="resim bulunamadı" onmouseover="this.src=products.Product6.image2"
+            onmouseout="this.src=products.Product6.image1" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">$90.00</span>
+            <p class="productName">Enriched Hand Wash</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="favProductSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+
+        <div class="favProductContainer">
+          <img class="favProductImage" src="assets/favProducts/product-07-04.jpg" width="330px" height="440px"
+            alt="resim bulunamadı" onmouseover="this.src=products.Product5.image2"
+            onmouseout="this.src=products.Product5.image1" />
+          <div class="favProductInfoContainer">
+            <span class="favProductPrices">$18.00 – $90.00</span>
+            <p class="productName">Scalp Moisturizing Cream</p>
+            <div class="productIcons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="favProductSetIcons">
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-eye"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-regular fa-star"></i></a>
+            <a href="#" class="productSetIcon"><i class="fa-solid fa-right-left"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More to Discover Section -->
+    <div class="discover-section">
+      <h2 class="discover-title">More to Discover</h2>
+      <p class="discover-subtitle">
+        Our bundles were designed to conveniently package your tanning
+        essentials while saving you money.
+      </p>
+
+      <div class="discover-cards">
+        <div class="discover-card">
+          <img src="assets/box1.jpg" alt="Summer Collection" class="discover-image" />
+          <div class="discover-content">
+            <h3>Summer Collection</h3>
+            <a href="#" class="discover-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="discover-card">
+          <img src="assets/box2.jpg" alt="From Our Blog" class="discover-image" />
+          <div class="discover-content">
+            <h3>From Our Blog</h3>
+            <a href="#" class="discover-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Logo ve Şirket Bilgileri -->
+        <div class="footer-company-info">
+          <div class="footer-logo">
+            <p class="glowing-text">GLOWING</p>
+          </div>
+          <p class="company-description">
+            Doğal ve organik cilt bakım ürünleriyle güzelliğinizi ön plana
+            çıkarın. Cildinize özel çözümler için bizi tercih edin.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Hızlı Linkler -->
+        <div class="footer-links">
+          <h3>Hızlı Linkler</h3>
+          <ul>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Ürünlerimiz</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">SSS</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- İletişim Bilgileri -->
+        <div class="footer-contact">
+          <h3>İletişim Bilgileri</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Merkez Mah. Güzellik Cad. No:123<br />İstanbul, Türkiye</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+90 (212) 123 45 67</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@glowing.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- İletişim Formu -->
+        <div class="footer-form">
+          <h3>Bize Ulaşın</h3>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Adınız" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="E-posta Adresiniz" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Mesajınız" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Gönder</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Alt Footer -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Glowing. Tüm hakları saklıdır.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Gizlilik Politikası</a>
+          <a href="#">Kullanım Şartları</a>
+          <a href="#">KVKK</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
 </body>
 
 </html>

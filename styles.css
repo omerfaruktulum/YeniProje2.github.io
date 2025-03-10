@@ -28,21 +28,21 @@ a {
 
 .productMainContainer {
   width: 100%;
-  display: flex;
-
-  column-gap: 2px;
-  margin-left: 3px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .productContainer {
-  display: flex;
+  display: none; /* Başlangıçta gizli */
   flex-direction: column;
-  width: 26%;
-  font-size: 16px;
   position: relative;
   overflow: hidden;
-  padding: 0 10px;
   height: auto;
+  transition: all 0.3s ease;
+  width: 100%;
 }
 
 .productContainer:hover .productSetIcons {
@@ -55,16 +55,18 @@ a {
 .productImage {
   width: 100%;
   height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .productPrices {
   font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .productName {
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .productName:hover {
@@ -76,7 +78,13 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 5px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.productIcons {
+  display: flex;
+  gap: 2px;
 }
 
 .productIcons i {
@@ -87,7 +95,7 @@ a {
 
 .productSetIcons {
   position: absolute;
-  top: 20%;
+  top: 10%;
   right: 20px;
   display: none;
   flex-direction: column;
@@ -155,7 +163,12 @@ a {
   background-color: #fff;
   color: black;
   z-index: 100;
+ position: sticky;
+ top: 0;
 }
+
+
+
 
 .menu-list {
   display: flex;
@@ -431,7 +444,6 @@ a {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 30px;
-  border-top: 0.5px solid black;
 }
 
 .customerFavTitle {
@@ -664,7 +676,6 @@ a {
   color: black;
   text-align: left;
   max-width: 600px;
-
 }
 
 .slide-content h2,
@@ -674,8 +685,6 @@ a {
   transition: transform 1s ease, opacity 1s ease;
   /* Yazı animasyonu daha yavaş */
 }
-
-
 
 .slide-content h2 {
   font-size: 3em;
@@ -776,7 +785,6 @@ a {
 }
 
 /* Discovery kısmı css i start */
-
 
 /* More to Discover Section */
 .discover-section {
@@ -888,7 +896,6 @@ a {
     font-size: 1.5rem;
   }
 }
-
 
 /* Footer Start        */
 
@@ -1154,82 +1161,38 @@ a {
     margin: 0 auto;
     text-align: center;
   }
+  .header {
+    padding: 15px;
+    width: 930px;
+    margin: 0 auto;
+  }
 }
 
 /* Products responsive */
 @media screen and (max-width: 1200px) {
   .productMainContainer {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
-
-  .productContainer {
-    width: 290px;
-    display: none;
-  }
-
-  .productImage {
-    width: 290px;
-    height: 326px;
   }
 }
 
 @media screen and (max-width: 990px) {
+  .productMainContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  } 
   .header {
     padding: 15px;
     width: 690px;
     margin: 0 auto;
   }
-
-  .productContainer {
-    width: 330px;
-    display: none;
-  }
-
-  .productImage {
-    width: 330px;
-    height: 440px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 15px;
-    width: 510px;
-    margin: 0 auto;
-  }
-
-  .productContainer {
-    width: 240px;
-    display: none;
-  }
-
-  .productImage {
-    width: 240px;
-    height: 320px;
-  }
 }
 
 @media screen and (max-width: 576px) {
-  .header {
-    padding: 15px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .productContainer {
-    width: 100%;
-    display: none;
-  }
-
   .productMainContainer {
-    margin-left: 0;
-  }
-
-  .productImage {
-    width: 100%;
-    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0 10px;
   }
 }
 
@@ -1238,32 +1201,26 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px 0;
   gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .product-dot {
   width: 12px;
   height: 12px;
-  background-color: black;
   border-radius: 50%;
+  background-color: #ddd;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .product-dot.active {
-  background: transparent;
-  border: 1px solid black;
-  width: 18px;
-  height: 18px;
+  background-color: #333;
+  transform: scale(1.2);
 }
 
 .product-dot:hover {
-  background: transparent;
-  border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  background-color: #999;
 }
 
 /* Serums responsive */
@@ -1351,8 +1308,6 @@ a {
     width: 100%;
   }
 
-
-
   /* Sadece sepet ve yıldız ikonlarını göster */
   .favProductSetIcons a:not(:nth-child(1)):not(:nth-child(3)) {
     display: none;
@@ -1360,11 +1315,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 15px;
+    width: 510px;
+    margin: 0 auto;
+  }
   .favProducts {
     width: 100%;
     justify-content: center;
     gap: 20px;
-
   }
 
   .favProductPerson {
@@ -1374,8 +1333,6 @@ a {
   .favProductContainer {
     width: calc(50% - 15px);
     padding: 15px;
-
-
 
     margin: 0;
   }
@@ -1419,12 +1376,53 @@ a {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 50%;
+  width: 300px;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #222222;
   transition: left 0.3s ease;
   z-index: 1000;
-  padding: 20px;
+  /* padding: 20px; */
+}
+
+.inputBoxWrapper {
+  width: 300px;
+  height: 97px;
+  background-color: #393939;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox {
+  width: 252px;
+  height: 48px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.inputBox input {
+  flex: 1;
+  background-color: #222222;
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 14px;
+  caret-color: #c2c2c2; /* İmlecin rengini siyah yapar */
+}
+.inputBox input:focus {
+  outline: none;
+}
+
+.inputBox button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  border: none;
+  color: #cccccc;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .mobile-menu.active {
@@ -1432,28 +1430,56 @@ a {
 }
 
 .mobile-menu-close {
-  color: white;
-  font-size: 24px;
+  color: #cccccc;
+  font-size: 16px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: -29px;
+  top: 0px;
   cursor: pointer;
+  background-color: #393939;
+  width: 29px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .mobile-menu ul {
   list-style: none;
   padding: 0;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .mobile-menu ul li {
-  margin: 20px 0;
+  /* margin: 20px 0; */
+  border-bottom: 1px solid #2f2f2f;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  position: relative;
+}
+
+.mobile-sub-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu ul li i {
+  color: #c2c2c2;
+  font-size: 11px;
+  cursor: pointer;
 }
 
 .mobile-menu ul li a {
-  color: white;
+  color: #c2c2c2;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .menu-overlay {
@@ -1495,7 +1521,7 @@ a {
 }
 
 .serumsDiv::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1516,12 +1542,10 @@ a {
   z-index: 2;
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .favProductSetIcons {
     font-size: 16px;
-    top: 10%;
+    top: 2%;
   }
 
   .favProductContainer img {
@@ -1554,6 +1578,11 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+  .header {
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .favProducts {
     width: 90%;
     padding: 0 5%;
@@ -1570,14 +1599,10 @@ a {
   }
 }
 
-
-
 @media screen and (max-width: 768px) {
   .favProducts {
     width: 540px;
     justify-content: space-between;
-
-
   }
 
   .favProductContainer {
@@ -1605,5 +1630,103 @@ a {
   .favProductContainer img {
     width: 100%;
     height: auto;
+  }
+}
+
+/*###############################*/
+/* TESTIMONIALS BÖLÜMÜ YENİ STİLLER */
+/*###############################*/
+
+.brand-logo:hover {
+  transform: scale(1.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Testimotial code  */
+
+.testimonials-section {
+  background-color: #f7f9f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.as-seen-in-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.brand-testimonial-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.brand-testimonial {
+  flex: 1;
+  max-width: 320px;
+}
+
+.brand-logo {
+  margin-bottom: 30px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo img {
+  max-width: 180px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.brand-logo:hover img {
+  filter: grayscale(0%);
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .brand-testimonial-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .brand-testimonial {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .brand-logo img {
+    max-width: 140px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
   }
 }
