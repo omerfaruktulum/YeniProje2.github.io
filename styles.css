@@ -1396,7 +1396,6 @@ a {
 .inputBox {
   width: 252px;
   height: 48px;
-  background-color: red;
   display: flex;
   justify-content: space-between;
 }
